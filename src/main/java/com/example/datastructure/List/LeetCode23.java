@@ -4,7 +4,11 @@ package com.example.datastructure.List;
  *文件名: LeetCode23
  *创建者: SWY
  *创建时间:2023/10/26 下午6:39
- *描述: TODO
+ *描述: 23. 合并 K 个升序链表
+        困难
+        给你一个链表数组，每个链表都已经按升序排列。
+
+        请你将所有链表合并到一个升序链表中，返回合并后的链表。
  */
 
 public class LeetCode23 {

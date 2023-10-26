@@ -22,9 +22,9 @@ public class LeetCode203 {
     /**
      * 创建一个虚拟节点的方式
      *
-     * @param head
-     * @param val
-     * @return
+     * @param head 待处理链表
+     * @param val 待删除值
+     * @return 处理完成的链表
      */
     public static ListNode removeElements(ListNode head, int val) {
 
@@ -48,9 +48,9 @@ public class LeetCode203 {
     /**
      * 使用递归的方法进行删除指定数据
      *
-     * @param head
-     * @param val
-     * @return
+     * @param head 待处理链表
+     * @param val 待删除值
+     * @return 处理完成的链表
      */
     public static ListNode removeElements1(ListNode head, int val) {
         if(head == null){

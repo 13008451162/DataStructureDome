@@ -19,6 +19,7 @@ package com.example.datastructure.Stack;
         答案及所有中间计算结果可以用 32 位 整数表示。
  */
 
+import java.util.Arrays;
 import java.util.Stack;
 
 public class LeetCode150 {
@@ -29,6 +30,7 @@ public class LeetCode150 {
     }
 
     public static int evalRPN(String[] tokens) {
+        System.out.println(Arrays.toString(tokens));
 
         Stack<Integer> stack = new Stack<>();
 
@@ -39,6 +41,7 @@ public class LeetCode150 {
                     stack.push(stack.pop()+stack.pop());
                     break;
                 case "-":
+                    //注意-和/ 是栈下面的元素-或/上面的元素
                     Integer a = stack.pop();
                     Integer b = stack.pop();
                     stack.push(b-a);

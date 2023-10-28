@@ -25,6 +25,12 @@ public class LeetCode19 {
         return dummyHead.next;
     }
 
+    /**
+     * 使用递归的方法
+     * @param head
+     * @param n
+     * @return
+     */
     public static int recursion(ListNode head, int n){
         if(head == null){
             return 0;

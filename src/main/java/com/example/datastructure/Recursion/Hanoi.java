@@ -7,6 +7,7 @@ package com.example.datastructure.Recursion;
  *描述: 实现汉诺塔
  */
 
+import java.util.Arrays;
 import java.util.LinkedList;
 
 public class Hanoi {
@@ -17,9 +18,8 @@ public class Hanoi {
 
     public static void main(String[] args) {
         long startTime = System.nanoTime();
-        init(5);
+        init(3);
         long ebdTime  = System.nanoTime();
-        System.out.println("Time = "+ (ebdTime-startTime) +"ns");
         print();
     }
 
@@ -44,9 +44,11 @@ public class Hanoi {
             return;
         }
 
+        print();
         towerOfHanoi(n-1,a,c,b);
         c.add(a.removeLast());  //将a移动到c
         towerOfHanoi(n-1,b,a,c);
+
 
     }
 
@@ -54,6 +56,7 @@ public class Hanoi {
         for (int i = n; i>=1; i--){
             a.add(i);
         }
+        System.out.println(a);
         towerOfHanoi(n,a,b,c);
     }
 }
